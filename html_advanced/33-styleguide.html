@@ -104,40 +104,70 @@
         </div>
       </section>
       <!-- Table -->
+<section>
+  <header>
+    <h2>Table</h2>
+  </header>
+
+  <table>
+    <thead>
+      <tr>
+        <th scope="col">Title</th>
+        <th scope="col">Director</th>
+        <th scope="col">Release Date</th>
+      </tr>
+    </thead>
+
+    <tbody>
+      <tr>
+        <th scope="row">Star Wars: Episode IV - A New Hope</th>
+        <td>George Lucas</td>
+        <td>1977</td>
+      </tr>
+      <tr>
+        <th scope="row">Star Wars: Episode V - The Empire Strikes Back</th>
+        <td>Irvin Kershner</td>
+        <td>1980</td>
+      </tr>
+      <tr>
+        <th scope="row">Star Wars: Episode VI - Return of the Jedi</th>
+        <td>Richard Marquand</td>
+        <td>1983</td>
+      </tr>
+    </tbody>
+  </table>
+</section>
+      <!-- Forms -->
       <section>
         <header>
-          <h2>Table</h2>
+          <h2>Forms</h2>
         </header>
         <div>
-          <table>
-            <thead>
-              <tr>
-                <th scope="col">Title</th>
-                <th scope="col">Director</th>
-                <th scope="col">Release Date</th>
-              </tr>
-            </thead>
-            <tbody>
-              <tr>
-                <th scope="row">A New Hope</th>
-                <td>George Lucas</td>
-                <td>1977</td>
-              </tr>
-              <tr>
-                <th scope="row">The Empire Strikes Back</th>
-                <td>Irvin Kershner</td>
-                <td>1980</td>
-              </tr>
-              <tr>
-                <th scope="row">Return of the Jedi</th>
-                <td>Richard Marquand</td>
-                <td>1983</td>
-              </tr>
-            </tbody>
-          </table>
+          <form action="/submit" method="post">
+            <label for="name">Name:</label><br>
+            <input type="text" id="name" name="name"><br><br>
+
+            <label for="email">Email:</label><br>
+            <input type="email" id="email" name="email"><br><br>
+
+            <label for="message">Message:</label><br>
+            <textarea id="message" name="message"></textarea><br><br>
+
+            <input type="submit" value="Submit">
+          </form>
         </div>
       </section>
-    </main>
-    <footer></footer>
-  </body>
-</html>
+      <!-- Article -->
+      <section>
+        <div>
+          <header>
+            <h2>Article</h2>
+          </header>
+          <div>
+            <article>
+              <header>
+                <h3>Article title</h3>
+                <p>By John Doe on June 1, 2024</p>
+              </header>
+              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Id Sextilius factum negabat. Quo tandem modo? At eum nihili facit; Quae contraria sunt his, malane?</p>
+              <footer>Tags: HTML, CSS, Styleguide</footer>
