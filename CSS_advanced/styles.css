@@ -1,17 +1,49 @@
-/* Minimal starter styles for the Techium homepage */
+.\/* Responsive, mobile-first styles for the Techium homepage *\/
 *{box-sizing:border-box;margin:0;padding:0}
-body{font-family:'Open Sans',sans-serif;color:#222;line-height:1.5}
+body{font-family:'Open Sans',sans-serif;color:#222;line-height:1.5;background:#fff}
 .container{max-width:1100px;margin:0 auto;padding:24px}
-.header{background:#111;color:#fff;padding:16px 0}
-.header-logo img{display:block}
-.nav{list-style:none;display:flex;gap:12px}
-.nav-link{color:inherit;text-decoration:none}
-.section{padding:48px 0}
-.section-hero{background:#0b0b0b;color:#fff;padding:80px 0;text-align:center}
-.section-title{font-family:'Raleway',sans-serif;font-size:28px;margin-bottom:12px}
+
+/* Header */
+.header{background:#111;color:#fff}
+.header .container{display:flex;align-items:center;justify-content:space-between;padding:16px}
+.header-logo img{display:block;max-width:100%;height:auto}
+.navbar-menu{margin-left:16px}
+.nav{list-style:none;display:flex;gap:12px;flex-wrap:wrap}
+.nav-link{color:inherit;text-decoration:none;padding:8px}
+
+/* Hero */
+.section{padding:40px 0}
+.section-hero{background:#0b0b0b;color:#fff;padding:56px 0;text-align:center}
+.section-title{font-family:'Raleway',sans-serif;font-size:24px;margin-bottom:12px}
 .button{display:inline-block;padding:10px 20px;background:#ff6b6b;color:#fff;text-decoration:none;border-radius:4px}
-.row{display:flex;gap:16px}
-.col-1-3{flex:1}
+
+/* Layout helpers */
+.row{display:flex;gap:16px;flex-wrap:wrap}
+.col-1-3{flex:1 1 300px}
+.col-1-2{flex:1 1 420px}
+
 .card-work img{max-width:100%;height:auto;display:block}
 .card-avatar{border-radius:50%}
+
 .footer{background:#111;color:#fff;padding:24px}
+
+/* Utilities */
+.visually-hidden{position:absolute!important;height:1px;width:1px;overflow:hidden;clip:rect(1px,1px,1px,1px);white-space:nowrap}
+
+/* Responsive breakpoints */
+@media (min-width:768px){
+	.section-title{font-size:28px}
+	.section-hero{padding:80px 0}
+	.header .container{padding:18px}
+	.nav{gap:16px}
+}
+
+@media (min-width:1000px){
+	.container{padding:32px}
+	.col-1-3{flex:0 0 calc(33.333% - 10.66px)}
+	.col-1-2{flex:0 0 calc(50% - 8px)}
+}
+
+/* Make images and media scale nicely */
+img{max-width:100%;height:auto;display:block}
+
