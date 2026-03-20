@@ -1,13 +1,17 @@
-/* Font weight variables and usage */
+/* Font weight variables and usage (aligned with styles/5-style.css) */
 :root {
     --font-weight-regular: 400;
     --font-weight-bold: 700;
 }
 
-body {
-    font-weight: var(--font-weight-regular);
-}
-
 h1, h2, h3, h4, h5, h6 {
     font-weight: var(--font-weight-bold);
+    font-family: var(--font-family-title);
+}
+
+body {
+    font-weight: var(--font-weight-regular);
+    font-size: var(--font-size-medium);
+    font-family: var(--font-family-base);
+    color: var(--text-color);
 }
