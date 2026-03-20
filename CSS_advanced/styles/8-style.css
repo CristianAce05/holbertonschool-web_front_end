@@ -1,0 +1,18 @@
+/* Line-height variables and usage (based on styles/7-style.css) */
+:root {
+    --line-height-small: 1.2;
+    --line-height-base: 1.5;
+    --line-height-big: 1.8;
+}
+
+body {
+    line-height: var(--line-height-base);
+    font-weight: var(--font-weight-regular);
+    font-size: var(--font-size-medium);
+    font-family: var(--font-family-base);
+    color: var(--text-color);
+}
+
+h1, h2, h3, h4, h5, h6 {
+    line-height: var(--line-height-big);
+}
