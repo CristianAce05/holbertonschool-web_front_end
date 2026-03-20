@@ -1,0 +1,4 @@
+/* Remove default link text decoration */
+a, a:visited, a:hover, a:active {
+    text-decoration: none;
+}
