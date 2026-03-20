@@ -47,3 +47,24 @@ body{font-family:'Open Sans',sans-serif;color:#222;line-height:1.5;background:#f
 /* Make images and media scale nicely */
 img{max-width:100%;height:auto;display:block}
 
+/* Mobile nav toggle */
+.header{position:relative}
+.nav-toggle{background:transparent;border:0;color:inherit;display:inline-flex;align-items:center;justify-content:center;width:44px;height:44px}
+.hamburger{display:block;width:22px;height:2px;position:relative;background:#fff}
+.hamburger::before,.hamburger::after{content:"";position:absolute;left:0;width:22px;height:2px;background:#fff}
+.hamburger::before{top:-7px}
+.hamburger::after{top:7px}
+
+/* Hide toggle on larger screens */
+@media(min-width:768px){
+	.nav-toggle{display:none}
+	.navbar-menu{display:block!important}
+}
+
+/* Small-screen nav behaviour */
+.navbar-menu{position:absolute;left:0;right:0;top:64px;background:#111;padding:12px;display:none}
+.navbar-menu.open, .navbar-menu[hidden="false"]{display:block}
+.navbar-menu .nav{flex-direction:column;gap:8px}
+.navbar-menu .nav-link{color:#fff;padding:8px 12px}
+
+
