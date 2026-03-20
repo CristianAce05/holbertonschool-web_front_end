@@ -1,0 +1,22 @@
+/* Color utility declarations for Task 2 */
+
+/* Body foreground color */
+body {
+  color: #161616;
+}
+
+/* All anchor elements foreground */
+a {
+  color: #161616;
+}
+
+/* Hide visually-hidden elements */
+.visually-hidden {
+  display: none;
+}
+
+/* Category and tagline accent color */
+.card-category,
+.section-tagline {
+  color: #D73953;
+}
