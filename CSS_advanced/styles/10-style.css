@@ -1,0 +1,20 @@
+/* Based on styles/9-style.css */
+
+/* Custom property for section header alignment */
+:root {
+    --section-header-align: center;
+}
+
+/* Remove default link text decoration */
+a, a:visited, a:hover, a:active {
+    text-decoration: none;
+}
+
+/* Section header alignment (placed just above section-tagline) */
+.section-header {
+    text-align: var(--section-header-align);
+}
+
+.section-tagline {
+    /* existing tagline styles (keep or extend as needed) */
+}
