@@ -1,23 +1,3 @@
-/* Smooth, effortless scrolling for the page
-   - Enables smooth programmatic/anchor scrolling where supported
-   - Respects user preference for reduced motion
-*/
-@media (prefers-reduced-motion: reduce) {
-	html {
-		scroll-behavior: auto;
-	}
-}
-
-@media (prefers-reduced-motion: no-preference) {
-	html {
-		scroll-behavior: smooth;
-		/* Enables momentum scrolling on iOS for overflowed containers */
-		-webkit-overflow-scrolling: touch;
-	}
-}
-
-/* Optional: small easing for programmatic scrolls triggered via script
-   (Some browsers ignore transition on scroll, but this is harmless.) */
-html.smooth-scroll {
-	scroll-behavior: smooth;
+html {
+    scroll-behavior: smooth;
 }
