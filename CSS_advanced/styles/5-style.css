@@ -1,0 +1,18 @@
+/* Font size variables and base font-size rules */
+:root {
+  --font-size-small: 1.2rem;
+  --font-size-medium: 1.6rem;
+  --font-size-large: 1.8rem;
+  --font-size-x-large: 2.3rem;
+  --font-size-xx-large: 4.8rem;
+}
+
+/* Make rem based on 62.5% of default (1rem = 10px when default 16px) */
+html {
+  font-size: 62.5%;
+}
+
+/* Default body font size uses the medium variable */
+body {
+  font-size: var(--font-size-medium);
+}
