@@ -1,0 +1,21 @@
+/* Google Fonts integration + font-family updates (based on styles/6-style.css) */
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&family=Raleway:wght@400;700&display=swap');
+
+:root {
+    --font-family-base: 'Open Sans', "Helvetica Neue", Helvetica, Arial, sans-serif;
+    --font-family-title: 'Raleway', "Helvetica Neue", Helvetica, Arial, sans-serif;
+    --font-weight-regular: 400;
+    --font-weight-bold: 700;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-weight: var(--font-weight-bold);
+    font-family: var(--font-family-title);
+}
+
+body {
+    font-weight: var(--font-weight-regular);
+    font-size: var(--font-size-medium);
+    font-family: var(--font-family-base);
+    color: var(--text-color);
+}
